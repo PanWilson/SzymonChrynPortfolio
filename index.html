@@ -1,28 +1,61 @@
 <html style="height:100vh;">
 
-  <head></head>
+  <head><style>
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+style></head>
 
   <body style="background-color:#012305; font-family:Tahoma;">
     <h1 style="text-align: center;"><span style="color: #ffffff;">Szymon Chryń portfolio</span></h1>
     <h2 style="text-align: center;"><span style="color: #ffffff;">World War 3(The Farm 51) - gameplay programmer</span></h2>
+    
+    <div class="row"> 
+  <div class="column">
     <p><video style="display: block; margin-left: auto; margin-right: auto;" controls="controls" width="600" height="600
      ">
     <source src="video1.mp4" type="video/mp4" /></video></p>
     <p><video style="display: block; margin-left: auto; margin-right: auto;" controls="controls" width="600" height="600
      ">
     <source src="video2.mp4" type="video/mp4" /></video></p>
+  </div>
+  <div class="column">
     <p><video style="display: block; margin-left: auto; margin-right: auto;" controls="controls" width="600" height="600
     ">
     <source src="video3.mp4" type="video/mp4" /></video></p>
     <p><video style="display: block; margin-left: auto; margin-right: auto;" controls="controls" width="600" height="600
      ">
     <source src="video4.mp4" type="video/mp4" /></video></p>
+  </div>  
+  <div class="column">
         <p><video style="display: block; margin-left: auto; margin-right: auto;" controls="controls" width="600" height="600
      ">
     <source src="video5.mp4" type="video/mp4" /></video></p>
         <p><video style="display: block; margin-left: auto; margin-right: auto;" controls="controls" width="600" height="600
      ">
     <source src="video6.mp4" type="video/mp4" /></video></p>
+  </div>
+</div>
+  
     <p align="center"><iframe title="YouTube video player" src="https://www.youtube.com/embed/X7sfvuFTGYQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
   </body>
 </html>
