@@ -1,24 +1,32 @@
 <html style="height:100vh;">
 
   <head><style>
-* {
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: auto;
+
   box-sizing: border-box;
-}
-.row {
-  display: -ms-flexbox; /* IE 10 */
-  display: flex;
-  -ms-flex: 50%; /* IE 10 */
-  flex: 50%;
-  padding: 0 4px;
+  width: 400px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: rgba(114, 186, 94, 0.05);
+  border: 2px dashed rgba(114, 186, 94, 0.35);
+  
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
 }
 
-/* Create two equal columns that sits next to each other */
-.column {
-  padding: 0 4px;
-}
-
-.column p {
-  margin-top: 8px;
+.item {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 213, 70, 0.4);
+  border: 2px dashed rgba(236, 198, 48, 0.5);
 }
 </style></head>
 
@@ -26,35 +34,27 @@
     <h1 style="text-align: center;"><span style="color: #ffffff;">Szymon Chryń portfolio</span></h1>
     <h2 style="text-align: center;"><span style="color: #ffffff;">World War 3(The Farm 51) - gameplay programmer</span></h2>
     
-    
-    
-    <div class="row"> 
-  <div class="column">
-    <p><video controls="controls" width="600" height="600
+ <div class="container">
+  <div class="item"><p><video controls="controls" width="600" height="600
      ">
-    <source src="video1.mp4" type="video/mp4" /></video></p>
-    <p><video controls="controls" width="600" height="600
+    <source src="video1.mp4" type="video/mp4" /></video></p></div>
+  <div class="item"><p><video controls="controls" width="600" height="600
      ">
-    <source src="video2.mp4" type="video/mp4" /></video></p>
-  </div>
-  <div class="column">
-  <p><video controls="controls" width="600" height="600
+    <source src="video2.mp4" type="video/mp4" /></video></p></div>
+  <div class="item"><p><video controls="controls" width="600" height="600
      ">
-    <source src="video5.mp4" type="video/mp4" /></video></p>
-     <p><video controls="controls" width="600" height="600
+    <source src="video5.mp4" type="video/mp4" /></video></p></div>
+  <div class="item"><p><video controls="controls" width="600" height="600
      ">
-    <source src="video6.mp4" type="video/mp4" /></video></p>
-  </div>  
-  <div class="column">
-       <p><video controls="controls" width="600" height="600
+    <source src="video6.mp4" type="video/mp4" /></video></p></div>
+  <div class="item"><p><video controls="controls" width="600" height="600
     ">
-    <source src="video3.mp4" type="video/mp4" /></video></p>
-    <p><video controls="controls" width="600" height="600
+    <source src="video3.mp4" type="video/mp4" /></video></p></div>
+  <div class="item"><p><video controls="controls" width="600" height="600
      ">
-    <source src="video4.mp4" type="video/mp4" /></video></p>
-  </div>    
-</div>
-     
+    <source src="video4.mp4" type="video/mp4" /></video></p></div>
+ </div>
+      
     <p align="center"><iframe title="YouTube video player" src="https://www.youtube.com/embed/X7sfvuFTGYQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
   </body>
 </html>
